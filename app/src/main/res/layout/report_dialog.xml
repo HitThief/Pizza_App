@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/RatingRadioGroup"
+        android:layout_width="399dp"
+        android:layout_height="542dp"
+        android:padding="25dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="156dp">
+
+        <RadioButton
+            android:id="@+id/excellentRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent" />
+
+        <RadioButton
+            android:id="@+id/vgoodRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Good" />
+
+        <RadioButton
+            android:id="@+id/goodRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/satisfactoryRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satisfactory" />
+
+        <RadioButton
+            android:id="@+id/poorRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poor" />
+
+        <Button
+            android:id="@+id/submitBT"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/cancelBT"
+            android:layout_width="163dp"
+            android:layout_height="64dp"
+            android:text="Cancel" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="203dp"
+        android:layout_height="51dp"
+        android:text="How was your experience?"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
