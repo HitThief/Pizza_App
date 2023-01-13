@@ -45,9 +45,9 @@ class MainActivity2 : AppCompatActivity() {
                 startActivity(intent1)
 
             } else if (flag == "Credit Card") {
-                onClickAddName(price as Int, pizzatype as String)
                 val intent2 = Intent(this, MainActivity3::class.java)
                 startActivity(intent2)
+                onClickAddName(price as Int, pizzatype as String)
             }
         }
 
@@ -85,7 +85,7 @@ class MainActivity2 : AppCompatActivity() {
             PizzaProvider.CONTENT_URI, values
         )
 
-        Toast.makeText(baseContext, uri.toString(), Toast.LENGTH_LONG).show()
+        //Toast.makeText(baseContext, uri.toString(), Toast.LENGTH_LONG).show()
     }
 }
 

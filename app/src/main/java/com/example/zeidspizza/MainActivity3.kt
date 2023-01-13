@@ -15,7 +15,7 @@ class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
-        val button: Button = findViewById(R.id.buttonConfirm)
+        val button: Button = findViewById(R.id.button3)
 
         button.setOnClickListener {
             val price = intent.extras?.get("price")
@@ -25,7 +25,7 @@ class MainActivity3 : AppCompatActivity() {
             val text = "Your Order is on the way"
             val duration = Toast.LENGTH_SHORT
             val toast = Toast.makeText(applicationContext, text, duration)
-            onClickAddName(price as Int, pizzatype as String)
+
             toast.show()
 
         }
@@ -63,6 +63,6 @@ class MainActivity3 : AppCompatActivity() {
             PizzaProvider.CONTENT_URI, values
         )
 
-        Toast.makeText(baseContext, uri.toString(), Toast.LENGTH_LONG).show()
+        //Toast.makeText(baseContext, uri.toString(), Toast.LENGTH_LONG).show()
     }
 }
